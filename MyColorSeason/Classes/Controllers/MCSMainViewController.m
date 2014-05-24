@@ -17,7 +17,7 @@
 
 @interface MCSMainViewController () <DBCameraViewControllerDelegate>
 
-@property (nonatomic, strong) NSArray *colorTypes;
+@property (nonatomic, strong) NSMutableArray *colorTypes;
 
 @end
 
@@ -35,7 +35,7 @@
 
 - (void)viewWillAppear:(BOOL)animated {
     [super viewWillAppear:animated];
-    self.colorTypes = [MCSColorType findAllSortedBy:@"date" ascending:NO];
+    self.colorTypes = [NSMutableArray arrayWithArray:[MCSColorType findAllSortedBy:@"date" ascending:NO]];
     [self.tableView reloadData];
 }
 
@@ -62,6 +62,21 @@
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
     return [tableView dequeueReusableCellWithIdentifier:NSStringFromClass([MCSColorTypeTableViewCell class]) forIndexPath:indexPath];
+}
+
+- (BOOL)tableView:(UITableView *)tableView canEditRowAtIndexPath:(NSIndexPath *)indexPath {
+    return YES;
+}
+
+- (void)tableView:(UITableView *)tableView commitEditingStyle:(UITableViewCellEditingStyle)editingStyle forRowAtIndexPath:(NSIndexPath *)indexPath {
+    if (editingStyle == UITableViewCellEditingStyleDelete) {
+        MCSColorType *ct = self.colorTypes[indexPath.row];
+        [self.colorTypes removeObjectAtIndex:indexPath.row];
+        [ct deleteEntity];
+        [ct.managedObjectContext saveToPersistentStoreWithCompletion:^(BOOL success, NSError *error) {
+            [self.tableView deleteRowsAtIndexPaths:@[indexPath] withRowAnimation:UITableViewRowAnimationAutomatic];
+        }];
+    }
 }
 
 #pragma mark - UITableViewDelegate
