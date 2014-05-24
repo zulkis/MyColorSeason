@@ -1,5 +1,5 @@
 //
-//  AppDelegate.h
+//  MCSAppDelegate.h
 //  MyColorSeason
 //
 //  Created by Alexey Minaev on 16/05/14.
@@ -8,12 +8,9 @@
 
 #import <UIKit/UIKit.h>
 
-@interface AppDelegate : NSObject <UIApplicationDelegate> {
-	
-	UIWindow *window;
-}
+@interface MCSAppDelegate : NSObject <UIApplicationDelegate>
 
-@property (nonatomic, retain) UIWindow *window;
+@property (nonatomic, strong) UIWindow *window;
 
 @end
 

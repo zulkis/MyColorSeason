@@ -1,0 +1,13 @@
+PODS:
+  - DBCamera (2.0)
+  - MagicalRecord/Shorthand (2.2)
+
+DEPENDENCIES:
+  - DBCamera
+  - MagicalRecord/Shorthand
+
+SPEC CHECKSUMS:
+  DBCamera: 512ab24fca498ffb9e603c78dfba47bd08a315bb
+  MagicalRecord: 2b471584fc9e3137f3d0a56967917baa4979e224
+
+COCOAPODS: 0.33.1
