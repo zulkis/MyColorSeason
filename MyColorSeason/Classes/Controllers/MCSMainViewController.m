@@ -7,6 +7,7 @@
 //
 
 #import "MCSMainViewController.h"
+#import "MCSHuePickerViewController.h"
 
 #import "MCSColorType+Extension.h"
 
@@ -91,7 +92,6 @@
 #pragma mark - DBCameraViewControllerDelegate
 
 - (void)captureImageDidFinish:(UIImage *)image withMetadata:(NSDictionary *)metadata {
-    //TODO: crete new item in history with 1st step
     MCSColorType *ct = [MCSColorType createEntity];
     ct.image = image;
     [ct.managedObjectContext saveToPersistentStoreAndWait];
@@ -105,6 +105,15 @@
     [self dismissViewControllerAnimated:YES completion:^{
         
     }];
+}
+
+#pragma mark - Segue
+
+- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
+    //TODO: make own segue from didSelectCell method
+    NSIndexPath *ip = [self.tableView indexPathForCell:sender];
+    MCSHuePickerViewController *huePickerVC = segue.destinationViewController;
+    huePickerVC.colorType = self.colorTypes[ip.row];
 }
 
 @end

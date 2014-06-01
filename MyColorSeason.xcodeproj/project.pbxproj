@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1326D8AE193B1FC40039F27F /* MCSPhotoView.m in Sources */ = {isa = PBXBuildFile; fileRef = 1326D8AD193B1FC40039F27F /* MCSPhotoView.m */; };
 		1341E94119253F8300AE9E26 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1341E94019253F8300AE9E26 /* UIKit.framework */; };
 		1341E94319253F8300AE9E26 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1341E94219253F8300AE9E26 /* Foundation.framework */; };
 		1341E94519253F8300AE9E26 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1341E94419253F8300AE9E26 /* CoreGraphics.framework */; };
@@ -18,6 +19,8 @@
 		1351A0C01928E757007369FC /* MCSCameraViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1351A0BF1928E757007369FC /* MCSCameraViewController.m */; };
 		1351A0C81928E7A2007369FC /* MCSCameraView.m in Sources */ = {isa = PBXBuildFile; fileRef = 1351A0C71928E7A2007369FC /* MCSCameraView.m */; };
 		1351A0CB1928EAF0007369FC /* MCSMainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1351A0CA1928EAF0007369FC /* MCSMainViewController.m */; };
+		138260B0193B132E00349A0E /* MCSColorViewerView.m in Sources */ = {isa = PBXBuildFile; fileRef = 138260AF193B132E00349A0E /* MCSColorViewerView.m */; };
+		138260B3193B1BDF00349A0E /* MCSHuePickerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 138260B2193B1BDF00349A0E /* MCSHuePickerViewController.m */; };
 		1386B7A919307FE000E9BFDE /* MCSColorType.m in Sources */ = {isa = PBXBuildFile; fileRef = 1386B7A619307FE000E9BFDE /* MCSColorType.m */; };
 		1386B7AA19307FE000E9BFDE /* MCSModel.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 1386B7A719307FE000E9BFDE /* MCSModel.xcdatamodeld */; };
 		1386B7B31930C46C00E9BFDE /* MCSColorTypeTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 1386B7B21930C46C00E9BFDE /* MCSColorTypeTableViewCell.m */; };
@@ -27,6 +30,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		1326D8AC193B1FC40039F27F /* MCSPhotoView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MCSPhotoView.h; sourceTree = "<group>"; };
+		1326D8AD193B1FC40039F27F /* MCSPhotoView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MCSPhotoView.m; sourceTree = "<group>"; };
 		1341E93D19253F8300AE9E26 /* MyColorSeason.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MyColorSeason.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1341E94019253F8300AE9E26 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		1341E94219253F8300AE9E26 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -45,6 +50,10 @@
 		1351A0C71928E7A2007369FC /* MCSCameraView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MCSCameraView.m; sourceTree = "<group>"; };
 		1351A0C91928EAF0007369FC /* MCSMainViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MCSMainViewController.h; sourceTree = "<group>"; };
 		1351A0CA1928EAF0007369FC /* MCSMainViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MCSMainViewController.m; sourceTree = "<group>"; };
+		138260AE193B132E00349A0E /* MCSColorViewerView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MCSColorViewerView.h; sourceTree = "<group>"; };
+		138260AF193B132E00349A0E /* MCSColorViewerView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MCSColorViewerView.m; sourceTree = "<group>"; };
+		138260B1193B1BDF00349A0E /* MCSHuePickerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MCSHuePickerViewController.h; sourceTree = "<group>"; };
+		138260B2193B1BDF00349A0E /* MCSHuePickerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MCSHuePickerViewController.m; sourceTree = "<group>"; };
 		1386B7A519307FE000E9BFDE /* MCSColorType.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MCSColorType.h; sourceTree = "<group>"; };
 		1386B7A619307FE000E9BFDE /* MCSColorType.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MCSColorType.m; sourceTree = "<group>"; };
 		1386B7A819307FE000E9BFDE /* MCSModel.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = MCSModel.xcdatamodel; sourceTree = "<group>"; };
@@ -155,6 +164,8 @@
 				1351A0BF1928E757007369FC /* MCSCameraViewController.m */,
 				1351A0C91928EAF0007369FC /* MCSMainViewController.h */,
 				1351A0CA1928EAF0007369FC /* MCSMainViewController.m */,
+				138260B1193B1BDF00349A0E /* MCSHuePickerViewController.h */,
+				138260B2193B1BDF00349A0E /* MCSHuePickerViewController.m */,
 			);
 			name = Controllers;
 			path = Classes/Controllers;
@@ -167,6 +178,10 @@
 				1351A0C71928E7A2007369FC /* MCSCameraView.m */,
 				1386B7B11930C46C00E9BFDE /* MCSColorTypeTableViewCell.h */,
 				1386B7B21930C46C00E9BFDE /* MCSColorTypeTableViewCell.m */,
+				138260AE193B132E00349A0E /* MCSColorViewerView.h */,
+				138260AF193B132E00349A0E /* MCSColorViewerView.m */,
+				1326D8AC193B1FC40039F27F /* MCSPhotoView.h */,
+				1326D8AD193B1FC40039F27F /* MCSPhotoView.m */,
 			);
 			name = Views;
 			path = Classes/Views;
@@ -303,7 +318,10 @@
 				1351A0C81928E7A2007369FC /* MCSCameraView.m in Sources */,
 				1351A0CB1928EAF0007369FC /* MCSMainViewController.m in Sources */,
 				1386B7AA19307FE000E9BFDE /* MCSModel.xcdatamodeld in Sources */,
+				138260B0193B132E00349A0E /* MCSColorViewerView.m in Sources */,
 				1341E95119253F8300AE9E26 /* MCSAppDelegate.m in Sources */,
+				1326D8AE193B1FC40039F27F /* MCSPhotoView.m in Sources */,
+				138260B3193B1BDF00349A0E /* MCSHuePickerViewController.m in Sources */,
 				1351A0C01928E757007369FC /* MCSCameraViewController.m in Sources */,
 				1386B7B31930C46C00E9BFDE /* MCSColorTypeTableViewCell.m in Sources */,
 				1386B7B71930C51600E9BFDE /* MCSColorType+Extension.m in Sources */,
@@ -319,6 +337,7 @@
 		1341E95519253F8300AE9E26 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_ARC = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				GCC_OPTIMIZATION_LEVEL = 0;
@@ -334,6 +353,7 @@
 		1341E95619253F8300AE9E26 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_ARC = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
